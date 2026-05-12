@@ -70,6 +70,8 @@ python -m src.animate --exp <實驗名稱>
 
 ## HW3-1：從最基礎的 DQN 開始
 
+> 完整分析報告：[HW3-1.md](HW3-1.md)
+
 **問題**：用最直白的方式實作 DQN——每一步直接算 TD loss 然後更新，看看能走多遠。
 
 ### Naive DQN（static 模式）
@@ -107,6 +109,8 @@ loss = MSE( Q(s, a; θ), Y )
 ---
 
 ## HW3-2：Double 與 Dueling 架構
+
+> 完整分析報告：[HW3-2.md](HW3-2.md)
 
 切換到 player 模式（13 種起點隨機），驗證兩個針對 DQN 已知問題的修正。
 
@@ -151,6 +155,8 @@ Double 修 target 的算法、Dueling 改網路結構，作用點正交，可以
 
 ## HW3-3：PyTorch Lightning + 三種訓練技巧
 
+> 完整分析報告：[HW3-3.md](HW3-3.md)
+
 把 Combined DQN 移植到 PyTorch Lightning，回到 random 模式，分別測試三種訓練改良的效果。
 
 移植本身用 `LightningModule` + `IterableDataset`：每個 epoch 玩一局 Gridworld 填 replay buffer，DataLoader 做 minibatch 取樣。Trainer 接管訓練迴圈，callback 負責存 snapshot。
@@ -182,6 +188,8 @@ Double 修 target 的算法、Dueling 改網路結構，作用點正交，可以
 ---
 
 ## HW3-4：Rainbow DQN（加分題）
+
+> 完整分析報告：[HW3-4.md](HW3-4.md)
 
 在 HW3-3 Combined 的基礎上疊加四個元件，實現完整 Rainbow：
 
@@ -229,9 +237,9 @@ results/
 ├── HW3-2/  double_player / dueling_player / combined_player
 ├── HW3-3/  baseline_random / clip_random / sched_random / huber_random / full_random
 └── HW3-4/  rainbow_random
-
-HW3-1.md  HW3-2.md  HW3-3.md  HW3-4.md   各階段詳細分析報告
 ```
+
+各階段詳細分析報告：[HW3-1.md](HW3-1.md) ｜ [HW3-2.md](HW3-2.md) ｜ [HW3-3.md](HW3-3.md) ｜ [HW3-4.md](HW3-4.md)
 
 ---
 
