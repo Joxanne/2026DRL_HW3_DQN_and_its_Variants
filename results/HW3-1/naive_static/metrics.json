@@ -1,0 +1,21 @@
+{
+  "stage": "HW3-1: Naive DQN for static mode",
+  "experiment": "naive_static",
+  "mode": "static",
+  "method": "naive",
+  "hyperparams": {
+    "epochs": 1000,
+    "gamma": 0.9,
+    "epsilon_start": 1.0,
+    "epsilon_end": 0.1,
+    "lr": 0.001,
+    "seed": 42,
+    "snapshot_every": 50
+  },
+  "final_loss_mean_last_100": 0.007767673581838608,
+  "final_loss_std_last_100": 0.009950271807610989,
+  "win_rate": 1.0,
+  "avg_steps_per_win": 7.0,
+  "n_eval_games": 1000,
+  "training_wall_time_sec": 14.881895542144775
+}

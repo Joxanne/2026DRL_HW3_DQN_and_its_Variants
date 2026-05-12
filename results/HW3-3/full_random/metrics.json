@@ -1,0 +1,32 @@
+{
+  "stage": "HW3-3: Enhanced DQN for random mode with Training Tips",
+  "experiment": "full_random",
+  "mode": "random",
+  "method": "lightning_full",
+  "tricks": [
+    "grad_clip=10.0",
+    "cosine_sched",
+    "huber_loss"
+  ],
+  "hyperparams": {
+    "epochs": 5000,
+    "gamma": 0.9,
+    "epsilon": 0.3,
+    "lr": 0.001,
+    "mem_size": 1000,
+    "batch_size": 200,
+    "max_moves": 50,
+    "sync_freq": 500,
+    "seed": 42,
+    "snapshot_every": 250,
+    "use_huber": true,
+    "use_cosine_sched": true,
+    "grad_clip": 10.0
+  },
+  "final_loss_mean_last_100": 0.8962771892547607,
+  "final_loss_std_last_100": 0.05385427549481392,
+  "win_rate": 0.876,
+  "avg_steps_per_win": 2.622146118721461,
+  "n_eval_games": 1000,
+  "training_wall_time_sec": 146.23591709136963
+}

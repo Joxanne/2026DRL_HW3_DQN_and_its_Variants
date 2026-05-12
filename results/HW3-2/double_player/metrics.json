@@ -1,0 +1,24 @@
+{
+  "stage": "HW3-2: Enhanced DQN Variants for player mode",
+  "experiment": "double_player",
+  "mode": "player",
+  "method": "double",
+  "hyperparams": {
+    "epochs": 3000,
+    "gamma": 0.9,
+    "epsilon": 0.3,
+    "lr": 0.001,
+    "mem_size": 1000,
+    "batch_size": 200,
+    "max_moves": 50,
+    "sync_freq": 500,
+    "seed": 42,
+    "snapshot_every": 150
+  },
+  "final_loss_mean_last_100": 0.00040764574077911675,
+  "final_loss_std_last_100": 0.00010154426854569465,
+  "win_rate": 1.0,
+  "avg_steps_per_win": 4.314,
+  "n_eval_games": 1000,
+  "training_wall_time_sec": 32.84177803993225
+}

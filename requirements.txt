@@ -1,0 +1,10 @@
+numpy>=1.26
+matplotlib>=3.8
+pillow>=10.0
+torch>=2.1
+pytorch-lightning>=2.0
+torchmetrics>=1.0
+lightning-utilities>=0.9
+imageio>=2.31
+imageio-ffmpeg>=0.4
+tqdm>=4.65

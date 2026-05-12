@@ -1,0 +1,20 @@
+[project]
+name = "hw3-dqn"
+version = "0.1.0"
+description = "DQN and its variants on Gridworld — NCHU DRL HW3"
+requires-python = ">=3.12"
+authors = [{name = "Student"}]
+license = {text = "MIT"}
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-q"

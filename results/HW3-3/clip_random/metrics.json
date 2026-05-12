@@ -1,0 +1,30 @@
+{
+  "stage": "HW3-3: Enhanced DQN for random mode with Training Tips",
+  "experiment": "clip_random",
+  "mode": "random",
+  "method": "lightning_clip",
+  "tricks": [
+    "grad_clip=10.0"
+  ],
+  "hyperparams": {
+    "epochs": 5000,
+    "gamma": 0.9,
+    "epsilon": 0.3,
+    "lr": 0.001,
+    "mem_size": 1000,
+    "batch_size": 200,
+    "max_moves": 50,
+    "sync_freq": 500,
+    "seed": 42,
+    "snapshot_every": 250,
+    "use_huber": false,
+    "use_cosine_sched": false,
+    "grad_clip": 10.0
+  },
+  "final_loss_mean_last_100": 0.05593481659889221,
+  "final_loss_std_last_100": 0.087421715259552,
+  "win_rate": 0.832,
+  "avg_steps_per_win": 2.6466346153846154,
+  "n_eval_games": 1000,
+  "training_wall_time_sec": 146.4757661819458
+}

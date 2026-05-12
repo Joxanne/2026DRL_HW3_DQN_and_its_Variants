@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Model checkpoints (too large for git)
+results/**/snapshots/
+results/**/checkpoint.pth
+results/**/*.pth
+
+# Lightning logs
+lightning_logs/
+
+# IDE / OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Claude
+.claude/

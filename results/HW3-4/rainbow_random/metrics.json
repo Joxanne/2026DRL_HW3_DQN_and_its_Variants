@@ -1,0 +1,29 @@
+{
+  "stage": "HW3-4: Rainbow DQN for Random Mode GridWorld",
+  "experiment": "rainbow_random",
+  "mode": "random",
+  "method": "rainbow",
+  "hyperparams": {
+    "epochs": 5000,
+    "gamma": 0.9,
+    "lr": 0.0005,
+    "mem_size": 1000,
+    "batch_size": 200,
+    "max_moves": 50,
+    "sync_freq": 500,
+    "n_step": 3,
+    "n_atoms": 51,
+    "v_min": -10.0,
+    "v_max": 10.0,
+    "alpha": 0.6,
+    "beta_start": 0.4,
+    "seed": 42,
+    "snapshot_every": 250
+  },
+  "final_loss_mean_last_100": 1.1510720252990723,
+  "final_loss_std_last_100": 0.13746914267539978,
+  "win_rate": 0.134,
+  "avg_steps_per_win": 2.2761194029850746,
+  "n_eval_games": 1000,
+  "training_wall_time_sec": 1101.6948864459991
+}
